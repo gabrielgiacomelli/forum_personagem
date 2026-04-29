@@ -3,3 +3,9 @@ background-image: url(../assets/background-imagem.jpg);
  margin: 0;
 
 }
+
+#body3 {
+    background-image: url(../assets/st.webp);
+    background-size: cover;
+    margin: 0%;
+}
