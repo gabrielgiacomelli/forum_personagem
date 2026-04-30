@@ -2,43 +2,63 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+/* body - parte principal da página visível para o usuário
+margin: remove a margem padrão do navegador
+font-family: define a fonte do site */
 
-/* FUNDO */
 #body2 {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)),
-    url("../Assets/imagemdefundo.jpg");
+    background: url("../Assets/imagemdefundo.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
+/* #body2 - body da tela de login
+background: define a imagem de fundo
+background-size: cover: faz a imagem ocupar toda a tela
+background-position: center: centraliza a imagem */
 
-/* CARD LOGIN */
 .card {
-    background: rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(255, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 0, 0, 0.3);
     border-radius: 15px;
     color: white;
     padding: 20px;
+    box-shadow: none;
 }
+/* .card - caixa do login
+background: fundo escuro transparente
+border: borda vermelha suave
+border-radius: arredondamento das bordas
+color: cor do texto
+padding: espaço interno
+box-shadow: remove sombra padrão */
 
-/* TÍTULO */
 h2 {
     color: #ff2a2a;
     text-align: center;
     text-shadow: 0 0 8px red;
     letter-spacing: 2px;
 }
+/* h2 - título LOGIN
+color: cor vermelha
+text-align: centraliza o texto
+text-shadow: efeito de brilho
+letter-spacing: espaço entre letras */
 
-/* INPUTS */
 .form-control {
     background-color: rgba(255,255,255,0.15);
     border: 1px solid rgba(255,255,255,0.3);
     color: white;
 }
+/* .form-control - campos de input
+background-color: fundo transparente
+border: borda clara
+color: cor do texto */
 
 .form-control::placeholder {
     color: rgba(255,255,255,0.7);
 }
+/* placeholder - texto dentro do input
+color: cor mais clara para diferenciar */
 
 .form-control:focus {
     border-color: red;
@@ -46,45 +66,189 @@ h2 {
     background-color: rgba(255,255,255,0.2);
     color: white;
 }
+/* :focus - quando o usuário clica no input
+border-color: muda cor da borda
+box-shadow: brilho
+background-color: fundo levemente mais claro */
 
-/* BOTÃO */
 .btn-primary {
     background-color: #c0392b;
     border: none;
     font-weight: bold;
     transition: 0.3s;
 }
+/* .btn-primary - botão entrar
+background-color: cor do botão
+border: remove borda
+font-weight: deixa texto em negrito
+transition: suaviza animação */
 
 .btn-primary:hover {
     background-color: #e74c3c;
     transform: scale(1.05);
 }
+/* :hover - quando passa o mouse
+background-color: muda cor
+transform: aumenta levemente */
 
-/* TEXTO DE ERRO */
 #problema {
     color: #ff4d4d;
     text-align: center;
     margin-top: 10px;
     font-weight: bold;
 }
+/* #problema - mensagem de erro
+color: vermelho claro
+text-align: centraliza
+margin-top: espaço acima
+font-weight: negrito */
 
-/* LABELS */
 label {
     color: #ddd;
 }
+/* label - texto dos campos
+color: cor cinza clara */
 
-/* ANIMAÇÃO LEVE */
-.card {
-    animation: aparecer 0.8s ease-in-out;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+/* .navbar - barra de navegação
+display: flex: organiza em linha
+align-items: alinha verticalmente
+justify-content: distribui espaço */
 
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.logo img {
+    max-height: 80px;
 }
+/* logo img - imagem do logo
+max-height: limita altura */
+
+.navbar h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+/* h1 na navbar
+flex: ocupa espaço disponível
+text-align: centraliza
+margin: remove margem */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+/* .nav-links - lista de links
+list-style: remove bolinhas
+display: flex: coloca em linha
+gap: espaço entre itens */
+
+.nav-links a {
+    text-decoration: none;
+    color: #ff2a2a;
+    text-shadow: 0 0 8px red;
+    transition: 0.3s;
+}
+/* links da navbar
+text-decoration: remove sublinhado
+color: cor vermelha
+text-shadow: brilho
+transition: suaviza efeito */
+
+.nav-links a:hover {
+    color: white;
+    text-shadow: 0 0 12px red;
+}
+/* hover nos links
+color: muda para branco
+text-shadow: aumenta brilho */
+
+#bodyHome {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.85)),
+                url("../Assets/background-imagem.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+/* #bodyHome - body da home
+background: imagem + camada escura
+background-size: cobre a tela
+background-position: centraliza
+background-repeat: evita repetição */
+
+#bodyHome main {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+/* main da home
+background: fundo escuro
+padding: espaço interno
+border-radius: bordas arredondadas
+max-width: largura máxima
+margin: centraliza */
+
+.titulo-destaque {
+    color: #ff2a2a;
+    text-shadow: 0 0 8px red;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+/* título principal
+color: vermelho
+text-shadow: brilho
+font-size: tamanho
+letter-spacing: espaçamento */
+
+.subtitulo {
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+/* subtítulo
+color: branco claro
+font-size: tamanho menor
+margin-top: espaço acima */
+
+.imagem-personagem {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+/* imagem
+max-width: limita tamanho
+border-radius: bordas arredondadas
+box-shadow: brilho vermelho */
+
+.descricao {
+    max-width: 600px;
+    margin: auto;
+    color: #e0e0e0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+/* descrição
+max-width: largura máxima
+margin: centraliza
+color: cor do texto
+line-height: espaçamento entre linhas */
+
+.botao-custom {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: #c0392b;
+    border: none;
+}
+/* botão
+padding: espaço interno
+font-size: tamanho do texto
+border-radius: arredondamento
+background-color: cor
+border: remove borda */
