@@ -1,14 +1,25 @@
 document.getElementById("FormLogin").addEventListener("submit", function (e) {
+
     e.preventDefault();
 
-    const email = document.getElementById("email").value;
-    const senha = document.getElementById("senha").value;
+    let email = document.getElementById("email").value;
+    let senha = document.getElementById("senha").value;
+    let erro = document.getElementById("problema");
 
-    if (email === "adm@gmail.com" && senha === "123") {
-        window.location.href = "public/home.html"
-    } else {
-        document.getElementById("problema").innerHTML = "LOGIN INVÁLIDO";
+    let emailCorreto = "adm@gmail.com";
+    let senhaCorreta = "1234";
+
+    if (email === "" || senha === "") {
+        erro.textContent = "Preencha todos os campos!";
+        return;
     }
+
+    if (email !== emailCorreto || senha !== senhaCorreta) {
+        erro.textContent = "Email ou senha incorretos!";
+        return;
+    }
+
+    window.location.href = "../public/home.html";
 
 
 });
