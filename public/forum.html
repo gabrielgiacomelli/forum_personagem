@@ -4,31 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórum</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">STRANGER THINGS</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">História</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Fórum</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body id="bodyHome">
 
-<!-- arquivos html home, história e fórum estão iguais, só mudando o item listado <li> "active" na navbar -->
+    <header class="bg-black" style="padding: 15px;">
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="../Assets/backgroung-imagem.jpg" alt="Logo Stranger" class="img-fluid"
+                    style="max-height: 100px; width: auto;">
+            </div>
+
+            <h1 class="text-center text-uppercase fs-1"
+                style="color: #ff2a2a; text-shadow: 0 0 8px red; letter-spacing: 2px;">
+                MUNDO INVERTIDO
+            </h1>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="home.html" style="color: #ff2a2a; text-shadow: 0 0 8px red;">
+                        HOME
+                    </a>
+                </li>
+
+                <li>
+                    <a href="historia.html" style="color: #ff2a2a; text-shadow: 0 0 8px red;">
+                        HISTÓRIA
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+
+        <section class="text-center mb-5">
+
+            <h2 class="titulo-destaque">
+                Personagens Principais
+            </h2>
+
+            <p class="subtitulo">
+                Conheça os heróis de Hawkins
+            </p>
+
+        </section>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="card bg-dark text-light border-danger h-100">
+
+                    <img src="../Assets/eleven.jpg" class="card-img-top" alt="Eleven">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-danger">
+                            Eleven
+                        </h3>
+
+                        <p class="card-text">
+                            Eleven é uma garota misteriosa com poderes psicocinéticos extraordinários.
+                            Após fugir de um laboratório secreto, ela encontra em seus amigos uma nova família
+                            e passa a lutar contra as criaturas do Mundo Invertido.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card bg-dark text-light border-danger h-100">
+
+                    <img src="../Assets/mike.webp" class="card-img-top" alt="Mike">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-danger">
+                            Mike
+                        </h3>
+
+                        <p class="card-text">
+                            Mike Wheeler é o líder do grupo de amigos. Inteligente, corajoso e leal,
+                            ele nunca desiste de proteger as pessoas que ama, principalmente Eleven
+                            e seus amigos.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card bg-dark text-light border-danger h-100">
+
+                    <img src="../Assets/will.jpg" class="card-img-top" alt="Will">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-danger">
+                            Will
+                        </h3>
+
+                        <p class="card-text">
+                            Will Byers é o garoto que desaparece misteriosamente no início da história.
+                            Sua conexão com o Mundo Invertido faz dele uma peça importante nos eventos
+                            sobrenaturais que acontecem em Hawkins.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card bg-dark text-light border-danger h-100">
+
+                    <img src="../Assets/dustin.jpg" class="card-img-top" alt="Dustin">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-danger">
+                            Dustin
+                        </h3>
+
+                        <p class="card-text">
+                            Dustin Henderson é divertido, carismático e apaixonado por ciência e tecnologia.
+                            Seu jeito engraçado e inteligente ajuda o grupo a enfrentar diversos perigos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card bg-dark text-light border-danger h-100">
+
+                    <img src="../Assets/lucas.jpg" class="card-img-top" alt="Lucas">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-danger">
+                            Lucas
+                        </h3>
+
+                        <p class="card-text">
+                            Lucas Sinclair é determinado, corajoso e muito protetor com seus amigos.
+                            Mesmo sendo desconfiado em alguns momentos, ele sempre está pronto para lutar
+                            pelo grupo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card bg-dark text-light border-danger h-100">
+
+                    <img src="../Assets/max.jpg" class="card-img-top" alt="Max">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-danger">
+                            Max
+                        </h3>
+
+                        <p class="card-text">
+                            Max Mayfield é aventureira, independente e adora skate e videogames.
+                            Sua personalidade forte conquista o grupo rapidamente enquanto ela enfrenta
+                            os perigos de Hawkins ao lado dos amigos.
+                        </p>
+
+                    </div>
+
+                </div>
+                        
+            </div>
+
+        </div>
+
+    </main>
 
 </body>
 
